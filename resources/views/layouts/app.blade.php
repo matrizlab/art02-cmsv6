@@ -35,9 +35,9 @@
                     <li class="nav-item text-nowrap">
                         <a class="nav-link" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();
+                        document.getElementById('logout-form1').submit();
                         ">{{ __('Logout') }}</a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        <form id="logout-form1" action="{{ route('logout') }}" method="POST" style="display: none;">
                              @csrf
                         </form>
                     </li>
@@ -96,9 +96,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();
+                            document.getElementById('logout-form2').submit();
                             ">{{ __('Logout') }}</a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            <form id="logout-form2" action="{{ route('logout') }}" method="POST" style="display: none;">
                                  @csrf
                             </form>
                         </li>
