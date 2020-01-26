@@ -15,7 +15,7 @@
                     </button> --}}
                   </div>
                 </div>
-
+                @if($categories->count() > 0)
                 <div class="table-responsive ">
                     <table class="table table-hover">
                       <thead>
@@ -44,6 +44,7 @@
                         @endforeach
                       </tbody>
                     </table>
+                </div>
                     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <form action="" method="POST" id="deleteCategoryForm">
@@ -69,6 +70,9 @@
                           </form>
                         </div>
                       </div>
+                      @else
+                      <h3 class="text-center">No categories yet.</h3>
+                      @endif
 @endsection
 @section('scripts')
   <script>
